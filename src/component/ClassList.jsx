@@ -27,25 +27,25 @@ const ClassList = () => {
       <Image src={logo} height={50} width={50} alt='logo'/>
         <h3 class="text-xl font-bold mb-2 text-[#333]">9th ICSE/CBSE </h3>
         <p class="text-sm text-[#333]">Cranax Education and Career Solutions Pvt. Ltd.</p>
-        <Link href={"/contact"} class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</Link>
+        <Link href={"https://play.google.com/store/apps/details?id=apps.cranaxgurukul.in&pcampaignid=web_share"} class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</Link>
       </div>
       <div class="bg-gray-100 p-6 rounded-md">
        <Image src={logo} height={50} width={50} alt='logo'/>
         <h3 class="text-xl font-bold mb-2 text-[#333]">10th ICSE/CBSE</h3>
         <p class="text-sm text-[#333]">Cranax Education and Career Solutions Pvt. Ltd.</p>
-        <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</a>
+        <Link href={"https://play.google.com/store/apps/details?id=apps.cranaxgurukul.in&pcampaignid=web_share"} class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</Link>
       </div>
       <div class="bg-gray-100 p-6 rounded-md">
       <Image src={logo} height={50} width={50} alt='logo'/>
         <h3 class="text-xl font-bold mb-2 text-[#333]">11th (Commerce) </h3>
         <p class="text-sm text-[#333]">Cranax Education and Career Solutions Pvt. Ltd.</p>
-        <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</a>
+        <Link href={"https://play.google.com/store/apps/details?id=apps.cranaxgurukul.in&pcampaignid=web_share"} class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</Link>
       </div>
       <div class="bg-gray-100 p-6 rounded-md">
       <Image src={logo} height={50} width={50} alt='logo'/>
         <h3 class="text-xl font-bold mb-2 text-[#333]">12th (Commerce) </h3>
         <p class="text-sm text-[#333]">Cranax Education and Career Solutions Pvt. Ltd.</p>
-        <a href="javascript:void(0);" class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</a>
+        <Link href={"https://play.google.com/store/apps/details?id=apps.cranaxgurukul.in&pcampaignid=web_share"} class="text-blue-600 font-bold inline-block text-sm mt-2 hover:underline">Learn more</Link>
       </div>
     </div>
     <Header/>
