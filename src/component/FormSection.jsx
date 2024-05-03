@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
   const [selectedInterest, setSelectedInterest] = useState('');
-  const [state, handleSubmit] = useForm("xayrvpej");
+  const [state, handleSubmit] = useForm("xpzvbygo");
 
   const handleInterestSelect = (interest) => {
     setSelectedInterest(interest);
@@ -96,6 +96,19 @@ function ContactForm() {
         <ValidationError
           prefix="Email"
           field="email"
+          errors={state.errors}
+          className="text-red-500"
+        />
+        <input
+          type='number'
+          placeholder='Mobile No.'
+          id="mobile"
+          name="mobile"
+          className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079] text-black"
+        />
+        <ValidationError
+          prefix="mobile"
+          field="mobile"
           errors={state.errors}
           className="text-red-500"
         />
