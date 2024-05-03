@@ -1,4 +1,5 @@
 "use client"
+"use client"
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -18,58 +19,59 @@ function ContactForm() {
     <div className="bg-gray-200 p-6 rounded-lg">
       <p className="text-sm font-semibold text-[#333]">I am interested in...</p>
       <form onSubmit={handleSubmit} className="mt-8 space-y-4">
-        <label>
-          <input
-            type="radio"
-            name="interest"
-            value="Academics"
-            checked={selectedInterest === 'Academics'}
-            onChange={() => handleInterestSelect('Academics')}
-            className="hidden"
-          />
-          <button
-            type="button"
-            onClick={() => handleInterestSelect('Academics')}
-            className={`px-4 py-2 rounded-md ${selectedInterest === 'Academics' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
-          >
-           Academics
-          </button>
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="interest"
-            value="Digital Marketing"
-            checked={selectedInterest === 'Digital Marketing '}
-            onChange={() => handleInterestSelect('Digital Marketing')}
-            className="hidden"
-          />
-          <button
-            type="button"
-            onClick={() => handleInterestSelect('Digital Marketing ')}
-            className={`px-4 py-2 rounded-md ${selectedInterest === 'Digital Marketing' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
-          >
-          Digital Marketing
-          </button>
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="interest"
-            value=" Personality Development"
-            checked={selectedInterest === ' Personality Development'}
-            onChange={() => handleInterestSelect(' Personality Development')}
-            className="hidden"
-          />
-          <button
-            type="button"
-            onClick={() => handleInterestSelect(' Personality Development')}
-            className={`px-4 py-2 rounded-md ${selectedInterest === 'Digital Marketing' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
-          >
-          Personality Development
-          </button>
-        </label>
-        {/* Add more interest buttons as needed */}
+        <div className='flex flex-col gap-3 md:flex-row'>
+          <label>
+            <input
+              type="radio"
+              name="interest"
+              value="Academics"
+              checked={selectedInterest === 'Academics'}
+              onChange={() => handleInterestSelect('Academics')}
+              className="hidden"
+            />
+            <button
+              type="button"
+              onClick={() => handleInterestSelect('Academics')}
+              className={`px-4 py-2 rounded-md ${selectedInterest === 'Academics' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
+            >
+              Academics
+            </button>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="interest"
+              value="Digital Marketing"
+              checked={selectedInterest === 'Digital Marketing'}
+              onChange={() => handleInterestSelect('Digital Marketing')}
+              className="hidden"
+            />
+            <button
+              type="button"
+              onClick={() => handleInterestSelect('Digital Marketing')}
+              className={`px-4 py-2 rounded-md ${selectedInterest === 'Digital Marketing' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
+            >
+              Digital Marketing
+            </button>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="interest"
+              value="Personality Development"
+              checked={selectedInterest === 'Personality Development'}
+              onChange={() => handleInterestSelect('Personality Development')}
+              className="hidden"
+            />
+            <button
+              type="button"
+              onClick={() => handleInterestSelect('Personality Development')}
+              className={`px-4 py-2 rounded-md ${selectedInterest === 'Personality Development' ? 'bg-[#a91079] text-white' : 'bg-gray-300 text-gray-800'} text-sm tracking-wider font-medium outline-none border-2 border-[#a91079] mr-4`}
+            >
+              Personality Development
+            </button>
+          </label>
+        </div>
         
         <input
           type='text'
@@ -138,4 +140,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-
