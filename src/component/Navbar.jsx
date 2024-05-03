@@ -4,6 +4,7 @@ import React from 'react'
 import { Menu, X } from 'lucide-react'
 import logo from '../../public/logo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const menuItems = [
   {
@@ -32,7 +33,10 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
+            <Link href={"/"}>
+            
             <Image src={logo} height={50} width={50} alt='logo'/>
+            </Link>
           </span>
           <span className="font-bold">Cranax Education</span>
         </div>
@@ -98,12 +102,15 @@ export function Navbar() {
                     ))}
                   </nav>
                 </div>
+                <Link href={"/contact"}>
+                
                 <button
                   type="button"
                   className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
                   Get Quote
                 </button>
+                </Link>
               </div>
             </div>
           </div>

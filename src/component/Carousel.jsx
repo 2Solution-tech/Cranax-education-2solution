@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const ShuffleHero = () => {
@@ -15,9 +16,12 @@ const ShuffleHero = () => {
         <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
         Welcome to Cranax Education, your premier destination for commerce education excellence.
         </p>
+        <Link href={"/contact"}>
+        
         <button className="bg-indigo-500 text-white font-medium py-2 px-4 rounded transition-all hover:bg-indigo-600 active:scale-95">
         GET QUOTE
         </button>
+        </Link>
       </div>
       <ShuffleGrid />
     </section>

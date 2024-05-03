@@ -16,12 +16,7 @@ export function NewsLetterFour() {
           />
         </div>
         <div className="w-full md:w-2/3 lg:w-1/2">
-          <p className="text-sm font-bold text-black">Learn . Grow . Improve</p>
-          <h2 className="mt-4 text-xl font-bold text-black">Sign up for our weekly newsletter</h2>
-          <p className="mt-4 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc
-            commodo posuere et sit amet ligula.
-          </p>
+          
           <div className="mt-4">
             <p className="font-semibold text-gray-800">
               Trusted by over 100,000+ businesses and individuals

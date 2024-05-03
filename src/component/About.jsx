@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 
 export const TextParallaxContentExample = () => {
   return (
@@ -123,9 +124,12 @@ const ExampleContent = () => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
       Our mission is to provide specialized coaching for classes 9th to 12th, Digital Marketing Training, and Personality Development courses. With a focus on holistic growth and academic success, we offer interactive live classes led by experienced faculty. Our hybrid learning options and the Cranax Gurukul app ensure personalized learning experiences for every student.
       </p>
+      <Link href={"/contact"}>
+      
       <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Get Quote <FiArrowUpRight className="inline" />
       </button>
+      </Link>
     </div>
   </div>
 );
