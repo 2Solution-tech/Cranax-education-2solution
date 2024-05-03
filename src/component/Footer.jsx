@@ -65,7 +65,7 @@
           <p class='text-gray-300 text-sm'>© 2024 Cranax Education and Career Solutions Pvt. Ltd.
           <Link href='https://2solution.in/' target='_blank'
             class="hover:underline mx-1">
-            Made By 2Solution </Link>
+            Developed By 2Solution </Link>
           </p>
         </div>
       </footer>
