@@ -1,7 +1,8 @@
 import Head from 'next/head'; // Import Head for managing metadata
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar'; // Correct the import path for Navbar
-import Footer from '@/components/Footer';
+import { Navbar } from '@/component/Navbar';
+import Footer from '@/component/Footer';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
